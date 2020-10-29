@@ -1,6 +1,31 @@
 <template>
   <div class="app-wrapper">
     <button class="btn-theme" @click="setTheme()">{{ theme }}</button>
+    <div class="slide-input">
+      <div>
+        <label class="z-10" for="points">{{ speed }}</label>
+        <input
+          class="z-10"
+          type="range"
+          id="points"
+          name="points"
+          min="0.3"
+          max="2"
+          step="0.1"
+          v-model="speed"
+        />
+      </div>
+      <div>
+        <select v-model="selected">
+          <option disabled value="">Please select one</option>
+          <option v-for="item in option" :key="item" :value="item.value">{{
+            item.label
+          }}</option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+      </div>
+    </div>
+
     <div class="moto" :class="direction"></div>
     <div class="bg-layer layer-1">
       <div class="layer" v-for="(item, i) in 30" :key="i">
@@ -80,8 +105,19 @@ export default {
     folder: "PARALLAX_NIGHT",
     moto: null,
     scrollPercent: 0,
+    speed: 0.8,
+    selected: "halloween.json",
+    option: [
+      {
+        label: "halloween",
+        value: "halloween.json",
+      },
+    ],
   }),
   watch: {
+    selected(selected) {
+      this.initLottie(selected);
+    },
     theme(theme) {
       theme == "night"
         ? (this.folder = "PARALLAX_NIGHT")
@@ -89,8 +125,7 @@ export default {
     },
     x(x) {
       let frames = this.moto.totalFrames;
-      let speed = 0.8;
-      let calc = ((this.scrollPercent % speed) / speed) * frames;
+      let calc = ((this.scrollPercent % this.speed) / this.speed) * frames;
 
       this.moto.goToAndStop(Math.round(calc), true);
     },
@@ -100,7 +135,7 @@ export default {
   },
   mounted() {
     this.initSmoothScrollbar();
-    this.initLottie();
+    this.initLottie(this.selected);
     this.setTheme("night");
   },
   methods: {
@@ -113,13 +148,13 @@ export default {
       );
       this.scrollbarInstance.addListener(this.listener);
     },
-    initLottie() {
+    initLottie(path) {
       this.moto = lottie.loadAnimation({
         container: document.querySelector(".moto"),
         renderer: "svg",
         loop: true,
         autoplay: false,
-        path: "halloween.json",
+        path,
       });
     },
     listener({ offset }) {
@@ -182,6 +217,13 @@ export default {
   z-index: 100;
   font-weight: bold;
   text-transform: uppercase;
+}
+.slide-input {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 60;
+  color: white;
 }
 .moto {
   width: 400px;

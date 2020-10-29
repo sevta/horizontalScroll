@@ -41032,17 +41032,25 @@ var _default = {
       imgFolder: "",
       folder: "PARALLAX_NIGHT",
       moto: null,
-      scrollPercent: 0
+      scrollPercent: 0,
+      speed: 0.8,
+      selected: "halloween.json",
+      option: [{
+        label: "halloween",
+        value: "halloween.json"
+      }]
     };
   },
   watch: {
+    selected: function selected(_selected) {
+      this.initLottie(_selected);
+    },
     theme: function theme(_theme) {
       _theme == "night" ? this.folder = "PARALLAX_NIGHT" : this.folder = "PARALLAX_DAY";
     },
     x: function x(_x) {
       var frames = this.moto.totalFrames;
-      var speed = 0.8;
-      var calc = this.scrollPercent % speed / speed * frames;
+      var calc = this.scrollPercent % this.speed / this.speed * frames;
       this.moto.goToAndStop(Math.round(calc), true);
     }
   },
@@ -41051,7 +41059,7 @@ var _default = {
   },
   mounted: function mounted() {
     this.initSmoothScrollbar();
-    this.initLottie();
+    this.initLottie(this.selected);
     this.setTheme("night");
   },
   methods: {
@@ -41061,13 +41069,13 @@ var _default = {
       });
       this.scrollbarInstance.addListener(this.listener);
     },
-    initLottie: function initLottie() {
+    initLottie: function initLottie(path) {
       this.moto = _lottieWeb.default.loadAnimation({
         container: document.querySelector(".moto"),
         renderer: "svg",
         loop: true,
         autoplay: false,
-        path: "halloween.json"
+        path: path
       });
     },
     listener: function listener(_ref) {
@@ -41146,6 +41154,87 @@ exports.default = _default;
       },
       [_vm._v(_vm._s(_vm.theme))]
     ),
+    _vm._v(" "),
+    _c("div", { staticClass: "slide-input" }, [
+      _c("div", [
+        _c("label", { staticClass: "z-10", attrs: { for: "points" } }, [
+          _vm._v(_vm._s(_vm.speed))
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.speed,
+              expression: "speed"
+            }
+          ],
+          staticClass: "z-10",
+          attrs: {
+            type: "range",
+            id: "points",
+            name: "points",
+            min: "0.3",
+            max: "2",
+            step: "0.1"
+          },
+          domProps: { value: _vm.speed },
+          on: {
+            __r: function($event) {
+              _vm.speed = $event.target.value
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.selected,
+                expression: "selected"
+              }
+            ],
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.selected = $event.target.multiple
+                  ? $$selectedVal
+                  : $$selectedVal[0]
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { disabled: "", value: "" } }, [
+              _vm._v("Please select one")
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.option, function(item) {
+              return _c(
+                "option",
+                { key: item, domProps: { value: item.value } },
+                [_vm._v(_vm._s(item.label))]
+              )
+            })
+          ],
+          2
+        ),
+        _vm._v(" "),
+        _c("span", [_vm._v("Selected: " + _vm._s(_vm.selected))])
+      ])
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "moto", class: _vm.direction }),
     _vm._v(" "),
@@ -41385,7 +41474,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54496" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55579" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

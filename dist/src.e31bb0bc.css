@@ -9,6 +9,13 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+.slide-input[data-v-14a476] {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 60;
+  color: white;
+}
 .moto[data-v-14a476] {
   width: 400px;
   height: 400px;
