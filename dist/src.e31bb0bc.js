@@ -28996,6 +28996,8 @@ module.exports = "/layer_01_1920 x 1080.63d7d6d5.png";
 module.exports = "/layer_01_2048 x 1546.348825be.png";
 },{}],"../lib/img/PARALLAX_DAY/layer_02_1920 x 1080.png":[function(require,module,exports) {
 module.exports = "/layer_02_1920 x 1080.ac8b7d10.png";
+},{}],"../lib/img/PARALLAX_DAY/layer_02_2048 x 1546.png":[function(require,module,exports) {
+module.exports = "/layer_02_2048 x 1546.cc52e964.png";
 },{}],"../lib/img/PARALLAX_DAY/layer_03_1920 x 1080.png":[function(require,module,exports) {
 module.exports = "/layer_03_1920 x 1080.5ed27bc1.png";
 },{}],"../lib/img/PARALLAX_DAY/layer_03_2048 x 1546.png":[function(require,module,exports) {
@@ -29008,8 +29010,6 @@ module.exports = "/layer_04_2048 x 1546.f5f918b4.png";
 module.exports = "/layer_05_1920 x 1080.8c9f9ef6.png";
 },{}],"../lib/img/PARALLAX_DAY/layer_05_2048 x 1546.png":[function(require,module,exports) {
 module.exports = "/layer_05_2048 x 1546.7eb814c1.png";
-},{}],"../lib/img/PARALLAX_DAY/layer_02_2048 x 1546.png":[function(require,module,exports) {
-module.exports = "/layer_02_2048 x 1546.cc52e964.png";
 },{}],"../lib/img/PARALLAX_NIGHT/layer_01_1920 x 1080.png":[function(require,module,exports) {
 module.exports = "/layer_01_1920 x 1080.5d42d8be.png";
 },{}],"../lib/img/PARALLAX_NIGHT/layer_01_2048 x 1546.png":[function(require,module,exports) {
@@ -29044,13 +29044,13 @@ module.exports = {
     "layer_01_1920 x 1080": require("./..\\PARALLAX_DAY\\layer_01_1920 x 1080.png"),
     "layer_01_2048 x 1546": require("./..\\PARALLAX_DAY\\layer_01_2048 x 1546.png"),
     "layer_02_1920 x 1080": require("./..\\PARALLAX_DAY\\layer_02_1920 x 1080.png"),
+    "layer_02_2048 x 1546": require("./..\\PARALLAX_DAY\\layer_02_2048 x 1546.png"),
     "layer_03_1920 x 1080": require("./..\\PARALLAX_DAY\\layer_03_1920 x 1080.png"),
     "layer_03_2048 x 1546": require("./..\\PARALLAX_DAY\\layer_03_2048 x 1546.png"),
     "layer_04_1920 x 1080": require("./..\\PARALLAX_DAY\\layer_04_1920 x 1080.png"),
     "layer_04_2048 x 1546": require("./..\\PARALLAX_DAY\\layer_04_2048 x 1546.png"),
     "layer_05_1920 x 1080": require("./..\\PARALLAX_DAY\\layer_05_1920 x 1080.png"),
-    "layer_05_2048 x 1546": require("./..\\PARALLAX_DAY\\layer_05_2048 x 1546.png"),
-    "layer_02_2048 x 1546": require("./..\\PARALLAX_DAY\\layer_02_2048 x 1546.png")
+    "layer_05_2048 x 1546": require("./..\\PARALLAX_DAY\\layer_05_2048 x 1546.png")
   },
   "PARALLAX_NIGHT": {
     "layer_01_1920 x 1080": require("./..\\PARALLAX_NIGHT\\layer_01_1920 x 1080.png"),
@@ -29069,7 +29069,7 @@ module.exports = {
     "layer_07_2048 x 1546": require("./..\\PARALLAX_NIGHT\\layer_07_2048 x 1546.png")
   }
 };
-},{"./..\\PARALLAX_DAY\\layer_01_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_01_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_01_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_01_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_02_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_02_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_03_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_03_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_03_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_03_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_04_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_04_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_04_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_04_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_05_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_05_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_05_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_05_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_02_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_02_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_01_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_01_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_01_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_01_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_02_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_02_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_02_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_02_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_03_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_03_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_03_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_03_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_04_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_04_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_04_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_04_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_05_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_05_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_05_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_05_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_06_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_06_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_06_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_06_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_07_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_07_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_07_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_07_2048 x 1546.png"}],"../lib/moto.json":[function(require,module,exports) {
+},{"./..\\PARALLAX_DAY\\layer_01_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_01_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_01_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_01_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_02_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_02_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_02_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_02_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_03_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_03_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_03_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_03_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_04_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_04_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_04_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_04_2048 x 1546.png","./..\\PARALLAX_DAY\\layer_05_1920 x 1080.png":"../lib/img/PARALLAX_DAY/layer_05_1920 x 1080.png","./..\\PARALLAX_DAY\\layer_05_2048 x 1546.png":"../lib/img/PARALLAX_DAY/layer_05_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_01_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_01_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_01_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_01_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_02_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_02_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_02_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_02_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_03_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_03_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_03_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_03_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_04_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_04_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_04_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_04_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_05_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_05_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_05_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_05_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_06_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_06_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_06_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_06_2048 x 1546.png","./..\\PARALLAX_NIGHT\\layer_07_1920 x 1080.png":"../lib/img/PARALLAX_NIGHT/layer_07_1920 x 1080.png","./..\\PARALLAX_NIGHT\\layer_07_2048 x 1546.png":"../lib/img/PARALLAX_NIGHT/layer_07_2048 x 1546.png"}],"../lib/moto.json":[function(require,module,exports) {
 module.exports = {
   "v": "5.5.1",
   "fr": 59.9400024414062,
@@ -40961,7 +40961,11 @@ var _lottieWeb = _interopRequireDefault(require("lottie-web"));
 
 var _ = _interopRequireDefault(require("./img/*/**.png"));
 
-var _moto = _interopRequireDefault(require("./moto.json"));
+var halloween = _interopRequireWildcard(require("./moto.json"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41063,7 +41067,7 @@ var _default = {
         renderer: "svg",
         loop: true,
         autoplay: false,
-        path: "/halloween.json"
+        path: "halloween.json"
       });
     },
     listener: function listener(_ref) {
@@ -41381,7 +41385,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51534" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54496" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

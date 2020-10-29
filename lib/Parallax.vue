@@ -48,7 +48,7 @@
 import Scrollbar from "smooth-scrollbar";
 import lottie from "lottie-web";
 import images from "./img/*/**.png";
-import motoJson from "./moto.json";
+import * as halloween from "./moto.json";
 
 class HorizontalScrollPlugin extends Scrollbar.ScrollbarPlugin {
   static pluginName = "horizontalScroll";
@@ -119,7 +119,7 @@ export default {
         renderer: "svg",
         loop: true,
         autoplay: false,
-        path: "/halloween.json",
+        path: "halloween.json",
       });
     },
     listener({ offset }) {
